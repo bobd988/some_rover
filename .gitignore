@@ -1,0 +1,8 @@
+build/
+devel/
+Firmware/
+/src/CMakeLists.txt
+/src/sensor/camera/realsense-ros
+/src/sensor/lidar/rplidar_ros
+.catkin_workspace
+

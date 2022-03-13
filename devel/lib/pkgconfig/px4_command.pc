@@ -1,0 +1,8 @@
+prefix=/home/demo/Public/github_px4/some/devel
+
+Name: px4_command
+Description: Description of px4_command
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

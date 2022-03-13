@@ -1,0 +1,2 @@
+mid/slam/ros_slam:modules/px4_command:simulation
+-DCATKIN_DEVEL_PREFIX=/home/demo/Public/github_px4/some/devel -DCMAKE_INSTALL_PREFIX=/home/demo/Public/github_px4/some/install -G Unix Makefiles

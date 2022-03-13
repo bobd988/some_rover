@@ -1,0 +1,8 @@
+prefix=/home/demo/Public/github_px4/some/devel
+
+Name: simulation
+Description: Description of simulation
+Version: 1.0.7
+Cflags: -I/home/demo/Public/github_px4/some/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros std_msgs message_runtime

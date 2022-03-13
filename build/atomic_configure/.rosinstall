@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/demo/Public/github_px4/some/devel/setup.sh

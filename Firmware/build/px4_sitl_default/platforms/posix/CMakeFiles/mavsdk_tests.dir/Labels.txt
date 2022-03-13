@@ -1,0 +1,13 @@
+# Target labels
+ mavsdk_tests
+# Source files and their labels
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/platforms/posix/CMakeFiles/mavsdk_tests
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/platforms/posix/CMakeFiles/mavsdk_tests.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/platforms/posix/CMakeFiles/mavsdk_tests-complete.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-build.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-configure.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-download.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-install.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-mkdir.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-patch.rule
+/home/demo/Public/github_px4/some/Firmware/build/px4_sitl_default/external/Stamp/mavsdk_tests/mavsdk_tests-update.rule

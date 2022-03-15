@@ -1,26 +1,20 @@
 
 
-此simulation 包含2D、3D激光雷达模型、深度相机模型、双目相机模型、realsense相机模型、IRlock相机模型。
+This px4 simulation includes 2D, 3D lidar models, depth camera models,  track camera models, realsense camera models, and IRlock camera models.
 
 
-- 配置PX4以及ros环境
+- Setup ROS Melodic and PX4 environment
 
-- 下载gazebo模型包
+- Setup gazebo models and plugins
 
-- 编译工作空间，运行launch文件
+- Compile Firmware and ROS project 
 
 
-## 配置PX4以及ros环境
+## Setup ROS and PX4
 
-在ubuntu 18.04已测试通过
+### ROS Melodic
 
-建议安装Ubuntu18.04 ,gazebo9 <9.13
 
-这里给出ubuntu18.04安装步骤
-
-### ROS
-
-#### for ubuntu18.04 melodic
 
 1. Add ROS to sources.list.
 
@@ -42,10 +36,17 @@
   please make sure install ros-gazebo related packages
 
 
-  For Gazebo 9,
-
   ```
   sudo apt install ros-melodic-gazebo9*
+  sudo apt-get install ros-melodic-gmapping
+sudo apt-get install ros-melodic-cartographer*
+sudo apt-get install ros-melodic-rtabmap*
+sudo apt-get install ros-melodic-ddynamic-reconfigure
+sudo apt-get install ros-melodic-ar-track-alvar*
+sudo apt-get install ros-melodic-velodyne-gazebo-plugins
+sudo apt-get install ros-melodic-moveit 
+sudo apt-get install ros-melodic-nav-core
+
   ```
 
 3. Initialize rosdep.
@@ -61,13 +62,13 @@
    sudo apt install python-catkin-tools
    ```
 
-4. Install mavros version 0.29.0 or above. Instructions to install it from sources can be found here: https://dev.px4.io/en/ros/mavros_installation.html. If you want to install using apt, be sure to check that the version is 0.29.0 or greater.
+5. Install mavros version 0.29.0+ 
 
    ```bash
    sudo apt install ros-melodic-mavros ros-melodic-mavros-extras
    ```
 
-5. Install the geographiclib dataset
+6. Install the geographiclib dataset
 
    ```bash
    wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
@@ -76,56 +77,29 @@
    ```
 
 
-### 下载编译px4 Firmware
+### PX4 Firmware
 
-在此目录下下载px4源码并切换v1.9.2的固件
 
-```
-cd ~/some
-git clone https://github.com/PX4/Firmware
-```
-
-或下载码云中的px4源码
+Download firmware 
 
 ```
 cd ~/some
-git clone https://gitee.com/bingobinlw/Firmware
+git clone https://github.com/PX4/PX4-Autopilot.git Firmware
 ```
 
-然后更新submodule切换固件并编译
+make sure the below simulation can show up
 
 ```
 cd Firmware
 git submodule update --init --recursive
-git checkout v1.9.2
+git checkout v1.11.0
 make distclean
 make px4_sitl_default gazebo
 ```
 
 
 
-
-## 下载gazebo模型包
-
-  在home目录下创建**gazebo_models**文件夹
-
-```
-youname@ubuntu:~$ mkdir gazebo_models
-```
-
-下载gazebo模型包 https://bitbucket.org/osrf/gazebo_models/downloads/
-
-把gazebo模型包解压出来的所有模型文件剪切至**gazebo_models**文件夹
-
-## 编译工作空间，运行launch文件
-编译之前，请先下载必要的slam包，具体请到ros_slam包中查看readme.md
-
-```
-dir:some/src/mid/slam/ros_slam
-查看README.md
-```
-
-运行demo之前请先下载3Dlidar仿真相关的插件包
+If any errors make sure plugins exists
 
 
 for ubuntu 18.04
@@ -137,36 +111,22 @@ sudo apt-get install ros-melodic-velodyne-gazebo-plugins
 ```
 cd ~/some
 catkin_make
-添加bash路经
-
 ```
-
-
-编译成功后运行`source_environment.sh`添加Firmware环境变量,some gazebo模型路经,gazebo_modles模型路经
 
 ```
 source source_enviroment.sh
 ```
 
 
-运行model demo launch文件
+run model demo launch files 
 
 ```
-roslaunch simulation models_demo_test_px4.launch
+roslaunch simulation {xxx}.launch
 ```
 
-# Slam
+## Gmapping_slam
 
-运行slam-Demo之前请先安装必要的功能包，具体请看
-
-```
-roscd ros_slam
-查看README.md
-```
-
-## gmapping_slam
-
-运行
+run
 
 ```
 roslaunch simulation gmapping_demo_px4.launch
@@ -177,38 +137,35 @@ roslaunch simulation gmapping_demo_px4.launch
 dir:some/src/simulation/scripts/README.md
 ```
 
-## cartographer
-cartographer在2019年10月份已经支持以ros包形式安装。若想运行此demo请先安装必要cartogra包。具体请看ros_slam包中的**README.md**
-
 ### 2Dlidar location
 
-运行demo之前请先在QGC参数表中配置参数，选择EKF位置来源来自板载计算机
+Before running the demo some parameter in QGC needs to be seetup first
 
 ```
 EKF2_AID_MASK = 24
 ```
 
-cartogra节点将接收2d激光雷达以及无人机的imu话题。
+Run
 
 ```
 roslaunch simulation cartographer2Dlidar_location_demo_px4.launch
 ```
 
-在定位之前请在键盘控制界面用键盘的**'g'**键调整uav的允许速度为1570，降低uav的运动时的倾斜角度以及速度，以达到更好的定位效果。
+Before positioning, please use the **'g'** key of the keyboard to adjust the allowable speed of the uav to 1570 on the keyboard control interface, and reduce the tilt angle and speed of the uav during movement to achieve a better positioning effect.
 
 
 
 ### 2Dlidar mapping
 
-如果你想建立更加准确的地图，而且你的robot已经拥有里程计。那么cartogra能够生成准切而稳定的map，不会存在location模式中地图会飘的情况。
+If you want to build a more accurate map and your robot already has an odometer. Then cartogra can generate accurate and stable maps, and there will be no situation where the map will float in the location mode.
 
-运行demo之前请先在QGC参数表中配置参数，选择EKF位置来源来自gps
+Before running the demo, please configure the parameters in the QGC parameter table and select the EKF location source from gps
 
 ```
 EKF2_AID_MASK = 1
 ```
 
-cartogra节点将接收2d激光雷达以及无人机的里程计话题
+The cartogra node will receive 2d lidar and odometer topics for drones
 
 ```
 roslaunch simulation cartographer2Dlidar_mapping_demo_px4.launch
@@ -216,26 +173,34 @@ roslaunch simulation cartographer2Dlidar_mapping_demo_px4.launch
 
 ### 3Dlidar location
 
-使用运行demo之前请先确保以安装3D雷达相关插件
 
-for ubuntu 16.04
-
-```
-sudo apt-get install ros-kinetic-velodyne-gazebo-plugins
-```
-
-for ubuntu 18.04
+For ubuntu 18.04
 
 ```
 sudo apt-get install ros-melodic-velodyne-gazebo-plugins
 ```
+Using a 16-line lidar, along with an imu data, the lidar is mounted horizontally on top of the aircraft. As far as the positioning effect is concerned, there is no situation that the 2Dlidar will float when positioning, and the speed and tilt angle of the drone can be greatly improved.
 
-使用一个16线的激光雷达，以及一个imu数据，激光雷达水平安装在飞机的顶部。就其定位效果来看，没有发现2Dlidar定位时会飘的情况，而且无人机速度倾斜角度都可以大幅提高。
 
-
-运行
+Run
 
 ```
 roslaunch simulation cartographer3Dlidar_demo_px4.launch
+```
+
+### VFH with iris
+![Demo](./images/offboard3.gif)
+
+run
+```
+roslaunch simulation obstacle_avoidance_2Dlaser_vfh_px4.launch
+```
+### circular_rover
+
+![Demo](./images/circular_rover.gif)
+
+run
+```
+roslaunch simulation circular_rover.launch 
 ```
 

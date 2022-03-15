@@ -718,6 +718,19 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named circular_car_node
+
+# Build rule for target.
+circular_car_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circular_car_node
+.PHONY : circular_car_node
+
+# fast build rule for target.
+circular_car_node/fast:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/build
+.PHONY : circular_car_node/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -794,6 +807,19 @@ uuid_msgs_generate_messages_eus: cmake_check_build_system
 uuid_msgs_generate_messages_eus/fast:
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
 .PHONY : uuid_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named circular_node
+
+# Build rule for target.
+circular_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circular_node
+.PHONY : circular_node
+
+# fast build rule for target.
+circular_node/fast:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/build
+.PHONY : circular_node/fast
 
 #=============================================================================
 # Target rules for targets named mavros_msgs_generate_messages_py
@@ -1869,6 +1895,8 @@ help:
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
 	@echo "... PriusHybridPlugin"
+	@echo "... circular_car_node"
+	@echo "... circular_node"
 	@echo "... collision_avoidance_vfh_node"
 	@echo "... gmock"
 	@echo "... gmock_main"

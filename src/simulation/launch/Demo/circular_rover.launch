@@ -1,0 +1,20 @@
+<launch> 
+	<!-- offboard 模式下飞圆形轨迹-->
+	<!-- 圆心在：切offbord时飞机所在位置
+	desire_z：期望圆半径 
+	desire_Radius：期望高度-->
+	
+  <arg name="world" default="$(find simulation)/worlds/empty.world" />
+
+  <include file="$(find simulation)/launch/px4/2Dlidar_rover_px4.launch">
+    <arg name="world" value="$(arg world)" />
+  </include>
+
+  <include file="$(find px4_command)/launch/circular_car.launch" >
+ 	<arg name="desire_z" value="5" />
+ 	<arg name="desire_Radius" value="20" />
+  </include>
+
+
+</launch>
+

@@ -75,12 +75,14 @@
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/sensor_msgs_generate_messages_eus.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/actionlib_generate_messages_cpp.dir
+/home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/circular_car_node.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/trajectory_msgs_generate_messages_eus.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/roscpp_generate_messages_py.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_cpp.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/roscpp_generate_messages_eus.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_eus.dir
+/home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/circular_node.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/mavros_msgs_generate_messages_py.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/_catkin_empty_exported_target.dir

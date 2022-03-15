@@ -1,0 +1,11 @@
+<launch>
+
+        <arg name="desire_z" default="1" />
+        <arg name="desire_Radius" default="4" />
+	
+	<node pkg="px4_command" type="circular_car_node" name="circular_car_node" output="screen" launch-prefix="gnome-terminal --tab -e">
+		<param name="desire_z" value = "$(arg desire_z)"/>			
+		<param name="desire_Radius" value = "$(arg desire_Radius)"/>		
+	</node>
+	<node pkg="px4_command" type="set_mode_node" name="set_mode_node"  output="screen" launch-prefix="gnome-terminal --tab -e"/>
+</launch>

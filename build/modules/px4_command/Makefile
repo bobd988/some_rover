@@ -634,6 +634,20 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
+modules/px4_command/CMakeFiles/circular_car_node.dir/rule:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/circular_car_node.dir/rule
+.PHONY : modules/px4_command/CMakeFiles/circular_car_node.dir/rule
+
+# Convenience name for target.
+circular_car_node: modules/px4_command/CMakeFiles/circular_car_node.dir/rule
+.PHONY : circular_car_node
+
+# fast build rule for target.
+circular_car_node/fast:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/build
+.PHONY : circular_car_node/fast
+
+# Convenience name for target.
 modules/px4_command/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
 	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
 .PHONY : modules/px4_command/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
@@ -716,6 +730,20 @@ uuid_msgs_generate_messages_eus: modules/px4_command/CMakeFiles/uuid_msgs_genera
 uuid_msgs_generate_messages_eus/fast:
 	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
 .PHONY : uuid_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+modules/px4_command/CMakeFiles/circular_node.dir/rule:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/circular_node.dir/rule
+.PHONY : modules/px4_command/CMakeFiles/circular_node.dir/rule
+
+# Convenience name for target.
+circular_node: modules/px4_command/CMakeFiles/circular_node.dir/rule
+.PHONY : circular_node
+
+# fast build rule for target.
+circular_node/fast:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/build
+.PHONY : circular_node/fast
 
 # Convenience name for target.
 modules/px4_command/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule:
@@ -1277,6 +1305,54 @@ actionlib_msgs_generate_messages_nodejs/fast:
 	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make modules/px4_command/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
+src/Application/circular.o: src/Application/circular.cpp.o
+.PHONY : src/Application/circular.o
+
+# target to build an object file
+src/Application/circular.cpp.o:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/src/Application/circular.cpp.o
+.PHONY : src/Application/circular.cpp.o
+
+src/Application/circular.i: src/Application/circular.cpp.i
+.PHONY : src/Application/circular.i
+
+# target to preprocess a source file
+src/Application/circular.cpp.i:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/src/Application/circular.cpp.i
+.PHONY : src/Application/circular.cpp.i
+
+src/Application/circular.s: src/Application/circular.cpp.s
+.PHONY : src/Application/circular.s
+
+# target to generate assembly for a file
+src/Application/circular.cpp.s:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/src/Application/circular.cpp.s
+.PHONY : src/Application/circular.cpp.s
+
+src/Application/circular_car.o: src/Application/circular_car.cpp.o
+.PHONY : src/Application/circular_car.o
+
+# target to build an object file
+src/Application/circular_car.cpp.o:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/src/Application/circular_car.cpp.o
+.PHONY : src/Application/circular_car.cpp.o
+
+src/Application/circular_car.i: src/Application/circular_car.cpp.i
+.PHONY : src/Application/circular_car.i
+
+# target to preprocess a source file
+src/Application/circular_car.cpp.i:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/src/Application/circular_car.cpp.i
+.PHONY : src/Application/circular_car.cpp.i
+
+src/Application/circular_car.s: src/Application/circular_car.cpp.s
+.PHONY : src/Application/circular_car.s
+
+# target to generate assembly for a file
+src/Application/circular_car.cpp.s:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/src/Application/circular_car.cpp.s
+.PHONY : src/Application/circular_car.cpp.s
+
 src/Application/collision_avoidance_vfh.o: src/Application/collision_avoidance_vfh.cpp.o
 .PHONY : src/Application/collision_avoidance_vfh.o
 
@@ -1438,9 +1514,17 @@ help:
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... circular_car_node"
+	@echo "... circular_node"
 	@echo "... collision_avoidance_vfh_node"
 	@echo "... position_to_mavros_node"
 	@echo "... set_mode_node"
+	@echo "... src/Application/circular.o"
+	@echo "... src/Application/circular.i"
+	@echo "... src/Application/circular.s"
+	@echo "... src/Application/circular_car.o"
+	@echo "... src/Application/circular_car.i"
+	@echo "... src/Application/circular_car.s"
 	@echo "... src/Application/collision_avoidance_vfh.o"
 	@echo "... src/Application/collision_avoidance_vfh.i"
 	@echo "... src/Application/collision_avoidance_vfh.s"

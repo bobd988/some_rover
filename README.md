@@ -126,6 +126,7 @@ roslaunch simulation {xxx}.launch
 
 ## Gmapping_slam
 
+![Demo](./images/gmapping-slam.png)
 run
 
 ```
@@ -202,5 +203,15 @@ roslaunch simulation obstacle_avoidance_2Dlaser_vfh_px4.launch
 run
 ```
 roslaunch simulation circular_rover.launch 
+```
+
+### 2Dliar rover obstacle avoidance
+
+![Demo](./images/rover-lidar.png)
+![Demo](./images/rover-lidar2.png)
+
+run
+```
+roslaunch simulation obstacle_avoidance_2Dlaser_rover.launch  
 ```
 

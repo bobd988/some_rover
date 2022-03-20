@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/flightgear_bridge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/flightgear_bridge/models/Rascal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/flightgear_bridge/models/TF-G1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/flightgear_bridge/models/TF-R1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/jMAVSim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/jMAVSim/jMAVlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/sitl_gazebo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/sitl_gazebo/external/OpticalFlow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/Tools/sitl_gazebo/external/OpticalFlow/external/klt_feature_tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/mavlink/include/mavlink/v2.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/src/drivers/gps/devices" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/src/lib/ecl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Firmware/src/lib/matrix" vcs="Git" />
+  </component>
+</project>

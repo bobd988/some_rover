@@ -1,25 +1,25 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_9f43c/fast && /usr/bin/make  -f CMakeFiles/cmTC_9f43c.dir/build.make CMakeFiles/cmTC_9f43c.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2a3e8/fast && /usr/bin/make  -f CMakeFiles/cmTC_2a3e8.dir/build.make CMakeFiles/cmTC_2a3e8.dir/build
 make[1]: Entering directory '/home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9f43c.dir/src.c.o
-/usr/lib/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD  -I/usr/local/cuda-11.4/include  -o CMakeFiles/cmTC_9f43c.dir/src.c.o -c /home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_9f43c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f43c.dir/link.txt --verbose=1
-/usr/lib/ccache/cc -I/usr/local/cuda-11.4/include  -rdynamic CMakeFiles/cmTC_9f43c.dir/src.c.o -o cmTC_9f43c 
-CMakeFiles/cmTC_9f43c.dir/src.c.o: In function `main':
+Building C object CMakeFiles/cmTC_2a3e8.dir/src.c.o
+/usr/lib/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD  -I/usr/local/cuda-11.4/include  -o CMakeFiles/cmTC_2a3e8.dir/src.c.o -c /home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2a3e8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a3e8.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -I/usr/local/cuda-11.4/include  -rdynamic CMakeFiles/cmTC_2a3e8.dir/src.c.o -o cmTC_2a3e8 
+CMakeFiles/cmTC_2a3e8.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x56): undefined reference to `pthread_cancel'
 src.c:(.text+0x67): undefined reference to `pthread_join'
 src.c:(.text+0x7b): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_9f43c.dir/build.make:98: recipe for target 'cmTC_9f43c' failed
-make[1]: *** [cmTC_9f43c] Error 1
+CMakeFiles/cmTC_2a3e8.dir/build.make:98: recipe for target 'cmTC_2a3e8' failed
+make[1]: *** [cmTC_2a3e8] Error 1
 make[1]: Leaving directory '/home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_9f43c/fast' failed
-make: *** [cmTC_9f43c/fast] Error 2
+Makefile:127: recipe for target 'cmTC_2a3e8/fast' failed
+make: *** [cmTC_2a3e8/fast] Error 2
 
 
 Source file was:
@@ -46,20 +46,20 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ea5fa/fast && /usr/bin/make  -f CMakeFiles/cmTC_ea5fa.dir/build.make CMakeFiles/cmTC_ea5fa.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cadb3/fast && /usr/bin/make  -f CMakeFiles/cmTC_cadb3.dir/build.make CMakeFiles/cmTC_cadb3.dir/build
 make[1]: Entering directory '/home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ea5fa.dir/CheckFunctionExists.c.o
-/usr/lib/ccache/cc   -I/usr/local/cuda-11.4/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ea5fa.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.20/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ea5fa
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea5fa.dir/link.txt --verbose=1
-/usr/lib/ccache/cc -I/usr/local/cuda-11.4/include -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_ea5fa.dir/CheckFunctionExists.c.o -o cmTC_ea5fa  -lpthreads 
+Building C object CMakeFiles/cmTC_cadb3.dir/CheckFunctionExists.c.o
+/usr/lib/ccache/cc   -I/usr/local/cuda-11.4/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_cadb3.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cadb3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cadb3.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -I/usr/local/cuda-11.4/include -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_cadb3.dir/CheckFunctionExists.c.o -o cmTC_cadb3  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ea5fa.dir/build.make:98: recipe for target 'cmTC_ea5fa' failed
-make[1]: *** [cmTC_ea5fa] Error 1
+CMakeFiles/cmTC_cadb3.dir/build.make:98: recipe for target 'cmTC_cadb3' failed
+make[1]: *** [cmTC_cadb3] Error 1
 make[1]: Leaving directory '/home/demo/Public/github_px4/some/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_ea5fa/fast' failed
-make: *** [cmTC_ea5fa/fast] Error 2
+Makefile:127: recipe for target 'cmTC_cadb3/fast' failed
+make: *** [cmTC_cadb3/fast] Error 2
 
 
 

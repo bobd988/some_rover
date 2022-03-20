@@ -289,6 +289,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named avoidance_car_vfh_node
+
+# Build rule for target.
+avoidance_car_vfh_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 avoidance_car_vfh_node
+.PHONY : avoidance_car_vfh_node
+
+# fast build rule for target.
+avoidance_car_vfh_node/fast:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build
+.PHONY : avoidance_car_vfh_node/fast
+
+#=============================================================================
+# Target rules for targets named collision_avoidance_vfh_rover_node
+
+# Build rule for target.
+collision_avoidance_vfh_rover_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 collision_avoidance_vfh_rover_node
+.PHONY : collision_avoidance_vfh_rover_node
+
+# fast build rule for target.
+collision_avoidance_vfh_rover_node/fast:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build
+.PHONY : collision_avoidance_vfh_rover_node/fast
+
+#=============================================================================
 # Target rules for targets named set_mode_node
 
 # Build rule for target.
@@ -1895,9 +1921,11 @@ help:
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
 	@echo "... PriusHybridPlugin"
+	@echo "... avoidance_car_vfh_node"
 	@echo "... circular_car_node"
 	@echo "... circular_node"
 	@echo "... collision_avoidance_vfh_node"
+	@echo "... collision_avoidance_vfh_rover_node"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

@@ -6,7 +6,7 @@
 	
   <arg name="world" default="$(find simulation)/worlds/empty.world" />
 
-  <include file="$(find simulation)/launch/px4/2Dlidar_rover_px4.launch">
+  <include file="$(find simulation)/launch/px4/2Dlidar_px4_rover.launch">
     <arg name="world" value="$(arg world)" />
   </include>
 

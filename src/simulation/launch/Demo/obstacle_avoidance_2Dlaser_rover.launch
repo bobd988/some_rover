@@ -1,0 +1,14 @@
+<launch> 
+  <arg name="world_path" default="$(find simulation)/worlds/amovcar.world" />
+
+  <include file="$(find simulation)/launch/px4/2Dlidar_amov.launch">
+    <arg name="world_path" value="$(arg world_path)" />
+  </include>
+
+   <include file="$(find px4_command)/launch/avoidance_vfh_rover.launch" >
+    </include>
+
+    <node pkg="px4_command" type="set_mode" name="set_mode" output="screen" launch-prefix="gnome-terminal --tab -e">
+    </node>
+</launch>
+

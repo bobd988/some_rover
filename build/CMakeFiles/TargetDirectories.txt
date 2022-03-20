@@ -40,6 +40,8 @@
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/list_install_components.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/rebuild_cache.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/test.dir
+/home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir
+/home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/set_mode_node.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/std_srvs_generate_messages_nodejs.dir
 /home/demo/Public/github_px4/some/build/modules/px4_command/CMakeFiles/std_srvs_generate_messages_lisp.dir

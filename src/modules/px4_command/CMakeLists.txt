@@ -38,8 +38,10 @@ include_directories(
 add_executable(position_to_mavros_node src/position_to_mavros.cpp)
 add_executable(set_mode_node src/Utilities/set_mode.cpp)
 add_executable(collision_avoidance_vfh_node src/Application/collision_avoidance_vfh.cpp)
+add_executable(collision_avoidance_vfh_rover_node src/Application/collision_avoidance_vfh_rover.cpp)
 add_executable(circular_node src/Application/circular.cpp)
 add_executable(circular_car_node src/Application/circular_car.cpp)
+add_executable(avoidance_car_vfh_node src/Application/avoidance_car_vfh.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(position_to_mavros_node
@@ -52,10 +54,17 @@ target_link_libraries(collision_avoidance_vfh_node
   ${catkin_LIBRARIES}
 )
 
+target_link_libraries(collision_avoidance_vfh_rover_node
+        ${catkin_LIBRARIES}
+        )
+
 target_link_libraries(circular_node
   ${catkin_LIBRARIES}
 )
 target_link_libraries(circular_car_node
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(avoidance_car_vfh_node
   ${catkin_LIBRARIES}
 )
 

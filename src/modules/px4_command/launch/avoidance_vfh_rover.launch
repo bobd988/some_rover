@@ -1,0 +1,15 @@
+<launch>
+
+<!--
+实现小车走QGC预定航点，并进行VFH实时避障
+-->
+
+
+<node pkg="px4_command" type="avoidance_car_vfh_node" name="avoidance_car_vfh_node" output="screen" launch-prefix="gnome-terminal --tab -e">
+</node>
+<node pkg="px4_command" type="set_mode_node" name="set_mode_node"  output="screen" launch-prefix="gnome-terminal --tab -e"/>
+
+
+</launch>
+
+

@@ -171,6 +171,8 @@ mid/slam/ros_slam/clean: mid/slam/ros_slam/CMakeFiles/dynamic_reconfigure_gencfg
 # Directory level rules for directory modules/px4_command
 
 # Recursive "all" directory target.
+modules/px4_command/all: modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/all
+modules/px4_command/all: modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/all
 modules/px4_command/all: modules/px4_command/CMakeFiles/set_mode_node.dir/all
 modules/px4_command/all: modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/all
 modules/px4_command/all: modules/px4_command/CMakeFiles/circular_car_node.dir/all
@@ -183,6 +185,8 @@ modules/px4_command/preinstall:
 .PHONY : modules/px4_command/preinstall
 
 # Recursive "clean" directory target.
+modules/px4_command/clean: modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/clean
+modules/px4_command/clean: modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/clean
 modules/px4_command/clean: modules/px4_command/CMakeFiles/set_mode_node.dir/clean
 modules/px4_command/clean: modules/px4_command/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 modules/px4_command/clean: modules/px4_command/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
@@ -436,7 +440,7 @@ CMakeFiles/download_extra_data.dir/clean:
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=12,13,14,15 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=16,17,18,19 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -462,7 +466,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=9,10,11 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=13,14,15 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -488,7 +492,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=18,19 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=22,23 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -514,7 +518,7 @@ gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=16,17 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=20,21 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -534,13 +538,65 @@ gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
+# Target rules for target modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir
+
+# All Build rule for target.
+modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=3,4 "Built target avoidance_car_vfh_node"
+.PHONY : modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/all
+
+# Build rule for subdir invocation for target.
+modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/demo/Public/github_px4/some/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/demo/Public/github_px4/some/build/CMakeFiles 0
+.PHONY : modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule
+
+# Convenience name for target.
+avoidance_car_vfh_node: modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule
+.PHONY : avoidance_car_vfh_node
+
+# clean rule for target.
+modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/clean
+.PHONY : modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/clean
+
+#=============================================================================
+# Target rules for target modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir
+
+# All Build rule for target.
+modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=11,12 "Built target collision_avoidance_vfh_rover_node"
+.PHONY : modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/all
+
+# Build rule for subdir invocation for target.
+modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/demo/Public/github_px4/some/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/demo/Public/github_px4/some/build/CMakeFiles 0
+.PHONY : modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule
+
+# Convenience name for target.
+collision_avoidance_vfh_rover_node: modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule
+.PHONY : collision_avoidance_vfh_rover_node
+
+# clean rule for target.
+modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/clean
+.PHONY : modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/clean
+
+#=============================================================================
 # Target rules for target modules/px4_command/CMakeFiles/set_mode_node.dir
 
 # All Build rule for target.
 modules/px4_command/CMakeFiles/set_mode_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/set_mode_node.dir/build.make modules/px4_command/CMakeFiles/set_mode_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/set_mode_node.dir/build.make modules/px4_command/CMakeFiles/set_mode_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=27,28 "Built target set_mode_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=31,32 "Built target set_mode_node"
 .PHONY : modules/px4_command/CMakeFiles/set_mode_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -982,7 +1038,7 @@ modules/px4_command/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=7,8 "Built target collision_avoidance_vfh_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=9,10 "Built target collision_avoidance_vfh_node"
 .PHONY : modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1398,7 +1454,7 @@ modules/px4_command/CMakeFiles/actionlib_generate_messages_cpp.dir/clean:
 modules/px4_command/CMakeFiles/circular_car_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_car_node.dir/build.make modules/px4_command/CMakeFiles/circular_car_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=3,4 "Built target circular_car_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=5,6 "Built target circular_car_node"
 .PHONY : modules/px4_command/CMakeFiles/circular_car_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1580,7 +1636,7 @@ modules/px4_command/CMakeFiles/uuid_msgs_generate_messages_eus.dir/clean:
 modules/px4_command/CMakeFiles/circular_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/circular_node.dir/build.make modules/px4_command/CMakeFiles/circular_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=5,6 "Built target circular_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=7,8 "Built target circular_node"
 .PHONY : modules/px4_command/CMakeFiles/circular_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1736,7 +1792,7 @@ modules/px4_command/CMakeFiles/actionlib_generate_messages_lisp.dir/clean:
 modules/px4_command/CMakeFiles/position_to_mavros_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/position_to_mavros_node.dir/build.make modules/px4_command/CMakeFiles/position_to_mavros_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/position_to_mavros_node.dir/build.make modules/px4_command/CMakeFiles/position_to_mavros_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=22,23 "Built target position_to_mavros_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=26,27 "Built target position_to_mavros_node"
 .PHONY : modules/px4_command/CMakeFiles/position_to_mavros_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3246,7 +3302,7 @@ simulation/CMakeFiles/realsense_gazebo_plugin.dir/all: mid/slam/ros_slam/CMakeFi
 simulation/CMakeFiles/realsense_gazebo_plugin.dir/all: mid/slam/ros_slam/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/realsense_gazebo_plugin.dir/build.make simulation/CMakeFiles/realsense_gazebo_plugin.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/realsense_gazebo_plugin.dir/build.make simulation/CMakeFiles/realsense_gazebo_plugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=24,25,26 "Built target realsense_gazebo_plugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=28,29,30 "Built target realsense_gazebo_plugin"
 .PHONY : simulation/CMakeFiles/realsense_gazebo_plugin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3338,7 +3394,7 @@ simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/all: mid/slam/ros_slam/CMakeF
 simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/all: mid/slam/ros_slam/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/build.make simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/build.make simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=20,21 "Built target irlock_gazebo_ros_plugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=24,25 "Built target irlock_gazebo_ros_plugin"
 .PHONY : simulation/CMakeFiles/irlock_gazebo_ros_plugin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3448,7 +3504,7 @@ simulation/CMakeFiles/simulation_generate_messages_eus.dir/all: simulation/CMake
 simulation/CMakeFiles/simulation_generate_messages_eus.dir/all: simulation/CMakeFiles/_simulation_generate_messages_check_deps_Control.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_eus.dir/build.make simulation/CMakeFiles/simulation_generate_messages_eus.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_eus.dir/build.make simulation/CMakeFiles/simulation_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=31,32,33 "Built target simulation_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=35,36,37 "Built target simulation_generate_messages_eus"
 .PHONY : simulation/CMakeFiles/simulation_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3502,7 +3558,7 @@ simulation/CMakeFiles/simulation_generate_messages_lisp.dir/all: simulation/CMak
 simulation/CMakeFiles/simulation_generate_messages_lisp.dir/all: simulation/CMakeFiles/_simulation_generate_messages_check_deps_Control.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_lisp.dir/build.make simulation/CMakeFiles/simulation_generate_messages_lisp.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_lisp.dir/build.make simulation/CMakeFiles/simulation_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=34,35 "Built target simulation_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=38,39 "Built target simulation_generate_messages_lisp"
 .PHONY : simulation/CMakeFiles/simulation_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3530,7 +3586,7 @@ simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/all: simulation/CM
 simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/all: simulation/CMakeFiles/_simulation_generate_messages_check_deps_Control.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/build.make simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/build.make simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=36,37 "Built target simulation_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=40,41 "Built target simulation_generate_messages_nodejs"
 .PHONY : simulation/CMakeFiles/simulation_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3610,7 +3666,7 @@ simulation/CMakeFiles/simulation_generate_messages_cpp.dir/all: simulation/CMake
 simulation/CMakeFiles/simulation_generate_messages_cpp.dir/all: simulation/CMakeFiles/_simulation_generate_messages_check_deps_Control.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_cpp.dir/build.make simulation/CMakeFiles/simulation_generate_messages_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_cpp.dir/build.make simulation/CMakeFiles/simulation_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=29,30 "Built target simulation_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=33,34 "Built target simulation_generate_messages_cpp"
 .PHONY : simulation/CMakeFiles/simulation_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3664,7 +3720,7 @@ simulation/CMakeFiles/simulation_generate_messages_py.dir/all: simulation/CMakeF
 simulation/CMakeFiles/simulation_generate_messages_py.dir/all: simulation/CMakeFiles/_simulation_generate_messages_check_deps_Control.dir/all
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_py.dir/build.make simulation/CMakeFiles/simulation_generate_messages_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f simulation/CMakeFiles/simulation_generate_messages_py.dir/build.make simulation/CMakeFiles/simulation_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=38,39,40 "Built target simulation_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/demo/Public/github_px4/some/build/CMakeFiles --progress-num=42,43,44 "Built target simulation_generate_messages_py"
 .PHONY : simulation/CMakeFiles/simulation_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.

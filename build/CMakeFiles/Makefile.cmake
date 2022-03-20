@@ -492,6 +492,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/DependInfo.cmake"
+  "modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/DependInfo.cmake"
   "modules/px4_command/CMakeFiles/set_mode_node.dir/DependInfo.cmake"
   "modules/px4_command/CMakeFiles/std_srvs_generate_messages_nodejs.dir/DependInfo.cmake"
   "modules/px4_command/CMakeFiles/std_srvs_generate_messages_lisp.dir/DependInfo.cmake"

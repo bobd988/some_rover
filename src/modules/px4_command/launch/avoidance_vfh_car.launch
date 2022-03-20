@@ -1,0 +1,21 @@
+<launch>
+
+<!--
+实现小车走QGC预定航点，并进行VFH实时避障
+-->
+
+<arg name="world_path" default="$(find simulation)/worlds/obstacle.world" />
+
+<include file="$(find simulation)/launch/px4/2Dlidar_amov.launch">
+	<arg name="world_path" value="$(arg world_path)" />
+</include>
+
+<node pkg="px4_command" type="avoidance_car_vfh_node" name="avoidance_car_vfh_node" output="screen" launch-prefix="gnome-terminal --tab -e">
+</node>
+
+<node pkg="simulation" type="keyboard_control_px4.py" name="keyboard_control_px4" output="screen" launch-prefix="gnome-terminal --tab -e">
+    </node>
+
+</launch>
+
+

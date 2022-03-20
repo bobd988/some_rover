@@ -172,6 +172,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule
+.PHONY : modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule
+
+# Convenience name for target.
+avoidance_car_vfh_node: modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/rule
+.PHONY : avoidance_car_vfh_node
+
+# fast build rule for target.
+avoidance_car_vfh_node/fast:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build
+.PHONY : avoidance_car_vfh_node/fast
+
+# Convenience name for target.
+modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule
+.PHONY : modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule
+
+# Convenience name for target.
+collision_avoidance_vfh_rover_node: modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/rule
+.PHONY : collision_avoidance_vfh_rover_node
+
+# fast build rule for target.
+collision_avoidance_vfh_rover_node/fast:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build
+.PHONY : collision_avoidance_vfh_rover_node/fast
+
+# Convenience name for target.
 modules/px4_command/CMakeFiles/set_mode_node.dir/rule:
 	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/px4_command/CMakeFiles/set_mode_node.dir/rule
 .PHONY : modules/px4_command/CMakeFiles/set_mode_node.dir/rule
@@ -1305,6 +1333,30 @@ actionlib_msgs_generate_messages_nodejs/fast:
 	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make modules/px4_command/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
+src/Application/avoidance_car_vfh.o: src/Application/avoidance_car_vfh.cpp.o
+.PHONY : src/Application/avoidance_car_vfh.o
+
+# target to build an object file
+src/Application/avoidance_car_vfh.cpp.o:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/src/Application/avoidance_car_vfh.cpp.o
+.PHONY : src/Application/avoidance_car_vfh.cpp.o
+
+src/Application/avoidance_car_vfh.i: src/Application/avoidance_car_vfh.cpp.i
+.PHONY : src/Application/avoidance_car_vfh.i
+
+# target to preprocess a source file
+src/Application/avoidance_car_vfh.cpp.i:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/src/Application/avoidance_car_vfh.cpp.i
+.PHONY : src/Application/avoidance_car_vfh.cpp.i
+
+src/Application/avoidance_car_vfh.s: src/Application/avoidance_car_vfh.cpp.s
+.PHONY : src/Application/avoidance_car_vfh.s
+
+# target to generate assembly for a file
+src/Application/avoidance_car_vfh.cpp.s:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/build.make modules/px4_command/CMakeFiles/avoidance_car_vfh_node.dir/src/Application/avoidance_car_vfh.cpp.s
+.PHONY : src/Application/avoidance_car_vfh.cpp.s
+
 src/Application/circular.o: src/Application/circular.cpp.o
 .PHONY : src/Application/circular.o
 
@@ -1376,6 +1428,30 @@ src/Application/collision_avoidance_vfh.s: src/Application/collision_avoidance_v
 src/Application/collision_avoidance_vfh.cpp.s:
 	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_node.dir/src/Application/collision_avoidance_vfh.cpp.s
 .PHONY : src/Application/collision_avoidance_vfh.cpp.s
+
+src/Application/collision_avoidance_vfh_rover.o: src/Application/collision_avoidance_vfh_rover.cpp.o
+.PHONY : src/Application/collision_avoidance_vfh_rover.o
+
+# target to build an object file
+src/Application/collision_avoidance_vfh_rover.cpp.o:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/src/Application/collision_avoidance_vfh_rover.cpp.o
+.PHONY : src/Application/collision_avoidance_vfh_rover.cpp.o
+
+src/Application/collision_avoidance_vfh_rover.i: src/Application/collision_avoidance_vfh_rover.cpp.i
+.PHONY : src/Application/collision_avoidance_vfh_rover.i
+
+# target to preprocess a source file
+src/Application/collision_avoidance_vfh_rover.cpp.i:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/src/Application/collision_avoidance_vfh_rover.cpp.i
+.PHONY : src/Application/collision_avoidance_vfh_rover.cpp.i
+
+src/Application/collision_avoidance_vfh_rover.s: src/Application/collision_avoidance_vfh_rover.cpp.s
+.PHONY : src/Application/collision_avoidance_vfh_rover.s
+
+# target to generate assembly for a file
+src/Application/collision_avoidance_vfh_rover.cpp.s:
+	cd /home/demo/Public/github_px4/some/build && $(MAKE) $(MAKESILENT) -f modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/build.make modules/px4_command/CMakeFiles/collision_avoidance_vfh_rover_node.dir/src/Application/collision_avoidance_vfh_rover.cpp.s
+.PHONY : src/Application/collision_avoidance_vfh_rover.cpp.s
 
 src/Utilities/set_mode.o: src/Utilities/set_mode.cpp.o
 .PHONY : src/Utilities/set_mode.o
@@ -1514,11 +1590,16 @@ help:
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... avoidance_car_vfh_node"
 	@echo "... circular_car_node"
 	@echo "... circular_node"
 	@echo "... collision_avoidance_vfh_node"
+	@echo "... collision_avoidance_vfh_rover_node"
 	@echo "... position_to_mavros_node"
 	@echo "... set_mode_node"
+	@echo "... src/Application/avoidance_car_vfh.o"
+	@echo "... src/Application/avoidance_car_vfh.i"
+	@echo "... src/Application/avoidance_car_vfh.s"
 	@echo "... src/Application/circular.o"
 	@echo "... src/Application/circular.i"
 	@echo "... src/Application/circular.s"
@@ -1528,6 +1609,9 @@ help:
 	@echo "... src/Application/collision_avoidance_vfh.o"
 	@echo "... src/Application/collision_avoidance_vfh.i"
 	@echo "... src/Application/collision_avoidance_vfh.s"
+	@echo "... src/Application/collision_avoidance_vfh_rover.o"
+	@echo "... src/Application/collision_avoidance_vfh_rover.i"
+	@echo "... src/Application/collision_avoidance_vfh_rover.s"
 	@echo "... src/Utilities/set_mode.o"
 	@echo "... src/Utilities/set_mode.i"
 	@echo "... src/Utilities/set_mode.s"
